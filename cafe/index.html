@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven Café</title>
+  <meta name="description" content="Brew Haven is a fictional café website built as a front-end practice project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">Brew Haven</a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="../index.html" class="back">&larr; Portfolio</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tag">Freshly roasted, every morning</p>
+      <h1>Coffee that makes your day better.</h1>
+      <p>Handcrafted drinks, warm desserts and a quiet corner to work or relax.</p>
+      <a class="btn" href="#menu">See the menu</a>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Our Menu</h2>
+    <div class="grid">
+      <div class="item"><h3>Espresso</h3><p>Strong and smooth, a classic shot.</p><span class="price">Rs 350</span></div>
+      <div class="item"><h3>Caramel Latte</h3><p>Espresso, steamed milk and caramel.</p><span class="price">Rs 550</span></div>
+      <div class="item"><h3>Cold Brew</h3><p>Slow brewed for 12 hours, served on ice.</p><span class="price">Rs 500</span></div>
+      <div class="item"><h3>Hot Chocolate</h3><p>Rich cocoa with whipped cream.</p><span class="price">Rs 450</span></div>
+      <div class="item"><h3>Blueberry Muffin</h3><p>Baked fresh every morning.</p><span class="price">Rs 300</span></div>
+      <div class="item"><h3>Chocolate Brownie</h3><p>Warm, fudgy and a little crunchy.</p><span class="price">Rs 380</span></div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <h2>About Us</h2>
+    <p class="narrow">Brew Haven started with one idea: good coffee should feel simple. We use quality beans, we brew with care, and we keep the space calm so you can enjoy your cup.</p>
+    <div class="stats">
+      <div><strong>12+</strong><span>Drinks</span></div>
+      <div><strong>100%</strong><span>Fresh beans</span></div>
+      <div><strong>7 days</strong><span>Open weekly</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Visit or Message Us</h2>
+    <form class="form" onsubmit="event.preventDefault(); this.reset(); document.getElementById('sent').hidden = false;">
+      <label>Name<input type="text" required placeholder="Your name"></label>
+      <label>Email<input type="email" required placeholder="you@example.com"></label>
+      <label>Message<textarea rows="4" required placeholder="How can we help?"></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="sent" hidden>Thanks! This is a demo form, so nothing was actually sent.</p>
+    </form>
+  </section>
+
+  <footer class="footer">Brew Haven is a fictional café. Website built by Adnan for practice.</footer>
+</body>
+</html>

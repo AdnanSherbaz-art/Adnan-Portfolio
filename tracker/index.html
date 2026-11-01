@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <a class="back" href="../index.html">&larr; Back to portfolio</a>
+    <h1>Expense Tracker</h1>
+
+    <section class="summary">
+      <div class="box"><span>Balance</span><strong id="balance">Rs 0</strong></div>
+      <div class="box income"><span>Income</span><strong id="income">Rs 0</strong></div>
+      <div class="box expense"><span>Expenses</span><strong id="expense">Rs 0</strong></div>
+    </section>
+
+    <form id="form" class="form">
+      <input id="text" type="text" placeholder="Description (e.g. Groceries)" required maxlength="40">
+      <input id="amount" type="number" placeholder="Amount" min="1" step="1" required>
+      <select id="type">
+        <option value="expense">Expense</option>
+        <option value="income">Income</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="income">Income</button>
+      <button class="filter" data-filter="expense">Expenses</button>
+      <button id="clear" class="clear">Clear all</button>
+    </div>
+
+    <ul id="list" class="list"></ul>
+    <p id="empty" class="empty">No entries yet. Add your first one above.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
